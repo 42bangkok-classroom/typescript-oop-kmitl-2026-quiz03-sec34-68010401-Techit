@@ -13,4 +13,7 @@ export class Warrior extends Character {
     return this.weapon;
   }
   receiveDamage(damage: number) {
+    super.receiveDamage(damage);
+    ;
+  }
 }

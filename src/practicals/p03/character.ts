@@ -10,7 +10,7 @@ export class Character {
         return this.health;
     }
 
-    reciveDamage(damage : number){
+    receiveDamage(damage : number){
         this.health -= damage;
     }
 }

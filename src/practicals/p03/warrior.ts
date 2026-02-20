@@ -14,8 +14,10 @@ export class Warrior extends Character {
   }
   receiveDamage(damage: number) {
     super.receiveDamage(damage);
-    if(this.weapon === "King Arthur" && this.weapon === "Excalibur"){
-    this.health += damage * 0.1;
-
+    
+    
+    if(this.health > 0){
+      this.health += damage * 0.1;
+    }
   }
 }

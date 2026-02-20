@@ -13,7 +13,9 @@ export class User {
     }
 
     getFullName(): string{
-        return `${this.Firstname} ${this.Lastname}`;
+       const Firstname = this.Firstname || "";
+       const Lastname = this.Lastname || "";
+       return `${Firstname} ${Lastname}` .trim();
     }
 
     setFirstname(value : string): void{

@@ -12,15 +12,15 @@ export class User {
         return this.age;
     }
 
-    getFullName(){
+    getFullName(): void{
         console.log(`${this.Firstname} ${this.Lastname}`);
     }
 
-    setFirstname(value : string){
+    setFirstname(value : string): void{
         this.Firstname = value;
     }
 
-    setLastname(value : string){
+    setLastname(value : string): void{
         this.Lastname = value;
     }
 }

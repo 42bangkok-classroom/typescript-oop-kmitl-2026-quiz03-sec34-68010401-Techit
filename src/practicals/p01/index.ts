@@ -1,4 +1,4 @@
-import { Car } from "./car.ts";
+import { Car } from "./car";
 
 const car = new Car();
 

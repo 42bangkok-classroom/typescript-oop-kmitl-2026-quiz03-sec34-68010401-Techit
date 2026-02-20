@@ -4,9 +4,7 @@ export class Warrior extends Character {
   weapon : string = "";
 
   constructor(name : string, weapon : string, health : number){
-    super();
-    this.name = name;
-    this.health = health;
+    super(name, health);
     this.weapon = weapon;
   }
   getWeapon(){
@@ -16,7 +14,7 @@ export class Warrior extends Character {
     super.receiveDamage(damage);
 
     if(this.weapon === "Excalibur"){
-      this.health += damage * 0.1;
+      this.health -= damage * 0.1;
     }
   }
 }

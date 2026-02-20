@@ -1,6 +1,10 @@
 export class Character {
     name : string = "";
     health : number = 100
+    constructor(name : string, health : number = 100){
+        this.name = name;
+        this.health = health;
+    }
 
     getName(){
         return this.name;

@@ -1,22 +1,28 @@
 export class Car {
     brand : string = "";
-    model : string = ""
+    model : string = "";
+
+    getBrand(){
+        return this.brand;
+    }
+
+    getModel(){
+        return this.model;
+    }
 
     start(){
-        console.log("is starting...");
+        console.log(`${this.brand} ${this.model} is starting...`);
     }
 
     accelerate(){
-        console.log("Toyota Camry is accelerating...");
+        console.log(`${this.brand} ${this.model} is accelerating...`);
     }
 
     brake(){
-        console.log("Toyota Camry is braking...");
+        console.log(`${this.brand} ${this.model} is braking...`);
     }
 
     stop(){
-        console.log("Toyota Camry is stopping...");
+        console.log(`${this.brand} ${this.model} is stopping...`);
     }
-
-    
 }

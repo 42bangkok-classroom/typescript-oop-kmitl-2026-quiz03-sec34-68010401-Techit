@@ -6,12 +6,15 @@ export class Warrior extends Character {
   constructor(name : string, weapon : string, health : number){
     super(name, health);
     this.weapon = weapon;
+    if(health !== undefined){
+        this.health = health;
+    }
   }
   getWeapon(){
     return this.weapon;
   }
   receiveDamage(damage: number) {
-    const reducedDamage = damage * 0.9; // Reduce damage by 10%
+    const reducedDamage = damage * 0.9;
     super.receiveDamage(reducedDamage);
     this.health -= reducedDamage;
     }

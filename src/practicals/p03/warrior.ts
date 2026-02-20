@@ -11,10 +11,8 @@ export class Warrior extends Character {
     return this.weapon;
   }
   receiveDamage(damage: number) {
-    super.receiveDamage(damage);
-
-    if(this.weapon === "Excalibur"){
-      this.health -= damage * 0.1;
+    const reducedDamage = damage * 0.9; // Reduce damage by 10%
+    super.receiveDamage(reducedDamage);
+    this.health -= reducedDamage;
     }
   }
-}

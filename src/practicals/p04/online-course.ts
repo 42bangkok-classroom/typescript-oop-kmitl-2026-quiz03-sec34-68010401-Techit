@@ -15,14 +15,14 @@ export class OnlineCourse {
         if(this.isOpen && this.enrolledStudents<this.maxStudents){
             this.enrolledStudents++
             console.log(`Successfully enrolled in ${this.courseName}.`)
-            return true
+            return true ;
         }else{
             console.log(`false  (Course Full)`)
-            return false
+            return false ;
         }
     }
     closeCourse(){
-        this.isOpen=false
+        this.isOpen = false ;
         console.log(`${this.courseName} is now closed for enrollment.`)
     }
     getAvailableSeats():number{

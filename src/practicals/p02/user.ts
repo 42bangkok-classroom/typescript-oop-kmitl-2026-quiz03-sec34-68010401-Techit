@@ -13,8 +13,8 @@ export class User {
     }
 
     getFullName(): string{
-       const Firstname = this.Firstname || "";
-       const Lastname = this.Lastname || "";
+       const Firstname = this.Firstname || ``;
+       const Lastname = this.Lastname || ``;
        return `${Firstname} ${Lastname}` .trim();
     }
 
